@@ -21,3 +21,16 @@ after_success:
     - docker push pauloeddias/multi-nginx
     - docker push pauloeddias/multi-server
     - docker push pauloeddias/multi-worker
+
+# deploy:
+#     # edge: true
+#     provider: elasticbeanstalk
+#     region: <my region>
+#     access_key_id: $AWS_ACCESS_KEY
+#     secret_access_key: $AWS_SECRET_KEY
+#     app: <my app>
+#     env: <my env>
+#     bucket_name: <my bucket>
+#     bucket_path: docker_multi
+#     on:
+#         branch: master
